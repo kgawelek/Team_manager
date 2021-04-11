@@ -1,0 +1,5 @@
+Kowalski
+0.5
+Nowak
+0.3
+.
