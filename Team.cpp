@@ -5,38 +5,29 @@
 Endurance_coach* Team::find_endurance_coach(std::string name) {
 	List_Element<Endurance_coach>* head = endurance_coaches.get_head();
 
-	try {
+
 		while (head) {
 			if (head->get_element().get_name() == name)
 				return &(head->get_element());
 			else
 				head = head->get_next();
 		}
-		throw "Nie znaleziono trenera o nazwisku " + name;
-	}
-	catch (char * err){
-		std::cout << err << '\n';
+		std::cout << "Nie znaleziono trenera o nazwisku " + name << '\n';
 		return nullptr;
-
-	}
 }
 
 Strength_coach* Team::find_strength_coach(std::string name) {
 	List_Element<Strength_coach>* head = strength_coaches.get_head();
 
-	try {
 		while (head) {
 			if (head->get_element().get_name() == name)
 				return &(head->get_element());
 			else
 				head = head->get_next();
 		}
-		throw "Nie znaleziono trenera o nazwisku " + name;
-	}
-	catch (char* err) {
-		std::cout << err << '\n';
+		std::cout << "Nie znaleziono trenera o nazwisku " + name << '\n';
 		return nullptr;
-	}
+
 }
 
 
@@ -63,6 +54,31 @@ void Team::add_player() {
 	this->players.push_back(Player(_name, nr, strength, endurance));
 }
 
+
+void Team::player_stats() {
+	std::string name;
+	int nr;
+	std::cout << "Podaj nazwisko zawodnika: ";
+	std::cin >> name;
+	std::cout << "Podaj nr zawodnika: ";
+	std::cin >> nr;
+
+	std::list<Player>::iterator it = std::find_if(players.begin(), players.end(), [name, nr](Player p) {
+		if (p.get_name() == name && p.get_nr() == nr)
+			return true;
+		else
+			return false;
+		});
+
+	if (it != players.end()) {
+		std::cout << "Kondycja: " << (*it).get_endurance() << '\n'
+			<< "Sila: " << (*it).get_strength() << '\n';
+	}
+	else {
+		std::cout << "Podano dane zawodnika, ktory nie istnieje" << '\n';
+	}
+}
+
 void Team::remove_player() {
 	//TODO: implement - 5
 }
@@ -87,6 +103,3 @@ void Team::change_workout_status() {
 	//TODO: implement - 3
 }
 
-void Team::player_stats() {
-	//TODO: implement - 1
-}

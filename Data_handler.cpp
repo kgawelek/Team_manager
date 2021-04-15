@@ -62,8 +62,11 @@ void Data_handler::read_players_list(std::string file_name, Team& team) {
 				file >> stat;
 
 				Endurance_coach* ec = team.find_endurance_coach(temp);
-				Endurance_workout ew(minutes, ec, Date(d, m, y), b, stat);
-				endurance_workouts.push_back(ew);
+				if(ec){
+					Endurance_workout ew(minutes, ec, Date(d, m, y), b, stat);
+					endurance_workouts.push_back(ew);
+				}
+				
 				//std::cout << endurance_workouts.back();
 			}
 
@@ -77,9 +80,11 @@ void Data_handler::read_players_list(std::string file_name, Team& team) {
 				file >> b;
 				file >> stat;
 
-				Strength_coach* ec = team.find_strength_coach(temp);
-
-				strength_workouts.push_back(Strength_workout(nr_of_exercices, ec, Date(d, m, y), b, stat));
+				Strength_coach* sc = team.find_strength_coach(temp);
+				if(sc){
+					strength_workouts.push_back(Strength_workout(nr_of_exercices, sc, Date(d, m, y), b, stat));
+				}
+				
 				//std::cout << strength_workouts.back();
 			}
 
