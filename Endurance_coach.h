@@ -12,3 +12,4 @@ public:
     Endurance_coach(std::string n, double bonus) : Coach(n), endurance_bonus_per_hour(bonus) {};
 };
 
+std::ostream& operator << (std::ostream& s, Endurance_coach& ec);

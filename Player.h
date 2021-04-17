@@ -24,6 +24,14 @@ public:
 	std::deque<Endurance_workout> get_endurance_workouts() { return this->endurance_workouts; };
 	std::deque<Strength_workout> get_strength_workouts() {	return this->strength_workouts; };
 
+
+	void set_endurance_workouts(std::deque<Endurance_workout> ew);
+	void set_strength_workouts(std::deque<Strength_workout> sw);
+
+	void add_endurance_workout(Endurance_workout ew);
+	void add_strength_workout(Strength_workout sw);
+
+
 	Player() = default;
 	Player(std::string name, int number, double strength, double endurance) :
 		name(name), number(number), strength(strength), endurance(endurance) {};

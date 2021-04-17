@@ -21,7 +21,9 @@ public:
 	My_list<Endurance_coach> get_endurance_coaches() { return this->endurance_coaches; };
 	My_list<Strength_coach> get_strength_coaches() { return this->strength_coaches; };
 
+	
 
+	std::list<Player>::iterator find_player();
 	Endurance_coach* find_endurance_coach(std::string name);
 	Strength_coach* find_strength_coach(std::string name);
 
@@ -36,6 +38,7 @@ public:
 	void workouts_history();
 	void change_workout_status();
 	void player_stats();
+	void print_coach_list();
 
 
 	friend class Data_handler;

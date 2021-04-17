@@ -15,14 +15,15 @@ void start_cli(Team& team) {
 		std::cout << "Wybierz opcje:" << '\n';
 		std::cout << "[1] Pokaz liste zawodnikow" << '\n';
 		std::cout << "[2] Dodaj zawodnika do druzyny" << '\n';
-		std::cout << "[3] Usuñ zawodnika z druzyny" << '\n';
+		std::cout << "[3] Usun zawodnika z druzyny" << '\n';
 		std::cout << "[4] Dodaj trening zawodnikowi" << '\n';
 		std::cout << "[5] Dodaj nowego trenera" << '\n';
 		std::cout << "[6] Centrum raportow" << '\n';
 		std::cout << "[7] Przegladaj historie treningow" << '\n';
 		std::cout << "[8] Oznacz trening jako wykonany/opuszczony" << '\n';
 		std::cout << "[9] Zobacz statystyki zawodnika" << '\n';
-		std::cout << "[10] Zakoncz program" << '\n';
+		std::cout << "[10] Lista trenerow" << '\n';
+		std::cout << "[11] Zakoncz program" << '\n';
 		std::cin >> choice;
 		try{
 		
@@ -55,6 +56,8 @@ void start_cli(Team& team) {
 				team.player_stats();
 				break;
 			case 10:
+				team.print_coach_list();
+			case 11:
 				break;
 			default:
 				throw "Wybrano niepoprawna opjce";

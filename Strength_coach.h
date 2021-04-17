@@ -11,3 +11,4 @@ public:
     Strength_coach(std::string n, double bonus) : Coach(n), strength_bonus_per_excercise(bonus) {};
 };
 
+std::ostream& operator << (std::ostream& s, Strength_coach& sc);
