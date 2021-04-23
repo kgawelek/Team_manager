@@ -85,7 +85,19 @@ void Team::player_stats() {
 }
 
 void Team::remove_player() {
-	//TODO: implement - 5
+	std::string name;
+	int nr;
+	std::cout << "Podaj nazwisko zawodnika: ";
+	std::cin >> name;
+	std::cout << "Podaj nr zawodnika: ";
+	std::cin >> nr;
+
+	this->players.erase(std::remove_if(this->players.begin(), this->players.end(), [name, nr](Player p) {
+		if (p.get_name() == name && p.get_nr() == nr)
+			return true;
+		else
+			return false;
+		}), players.end());
 }
 
 

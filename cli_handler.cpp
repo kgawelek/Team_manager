@@ -1,7 +1,7 @@
 #include <iostream>
-#include "cli_handler.h"
+#include "Cli_handler.h"
 
-void start_cli(Team& team) {
+void Cli_handler::start_cli(Team& team) {
 
 	std::cout << "------------------------------------------------" << '\n';
 
@@ -9,7 +9,7 @@ void start_cli(Team& team) {
 
 	int choice = 0;
 
-	while (choice != 10) {
+	while (choice != 11) {
 		choice = 0;
 
 		std::cout << "Wybierz opcje:" << '\n';
@@ -24,6 +24,7 @@ void start_cli(Team& team) {
 		std::cout << "[9] Zobacz statystyki zawodnika" << '\n';
 		std::cout << "[10] Lista trenerow" << '\n';
 		std::cout << "[11] Zakoncz program" << '\n';
+		std::cout << "Opcja: ";
 		std::cin >> choice;
 		try{
 		
@@ -57,6 +58,7 @@ void start_cli(Team& team) {
 				break;
 			case 10:
 				team.print_coach_list();
+				break;
 			case 11:
 				break;
 			default:

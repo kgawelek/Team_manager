@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="cli_handler.cpp" />
+    <ClCompile Include="Cli_handler.cpp" />
     <ClCompile Include="Coach.cpp" />
     <ClCompile Include="Data_handler.cpp" />
     <ClCompile Include="Date.cpp" />
@@ -153,7 +153,7 @@
     <ClCompile Include="Workout.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="cli_handler.h" />
+    <ClInclude Include="Cli_handler.h" />
     <ClInclude Include="Coach.h" />
     <ClInclude Include="Data_handler.h" />
     <ClInclude Include="Date.h" />

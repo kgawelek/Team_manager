@@ -45,7 +45,7 @@
     <ClCompile Include="Workout.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
-    <ClCompile Include="cli_handler.cpp">
+    <ClCompile Include="Cli_handler.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
     <ClCompile Include="Data_handler.cpp">
@@ -83,7 +83,7 @@
     <ClInclude Include="My_list.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
-    <ClInclude Include="cli_handler.h">
+    <ClInclude Include="Cli_handler.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
     <ClInclude Include="Data_handler.h">

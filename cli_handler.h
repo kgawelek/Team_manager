@@ -1,4 +1,9 @@
 #pragma once
 #include "Team.h"
 
-void start_cli(Team& team);
+class Cli_handler {
+
+public:
+	void start_cli(Team& team);
+};
+

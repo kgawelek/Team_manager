@@ -1,5 +1,12 @@
 #include "Data_handler.h"
 
+void Data_handler::read_data(Team& team) {
+	
+	this->read_endurance_coaches(this->endurance_coaches_data, team);
+	this->read_strength_coaches(this->strength_coaches_data, team);
+	this->read_players_list(this->players_data, team);
+}
+
 void Data_handler::read_endurance_coaches(std::string file_name, Team& team) {
 
 	std::ifstream file;
@@ -18,7 +25,7 @@ void Data_handler::read_endurance_coaches(std::string file_name, Team& team) {
 	}
 }
 
-void Data_handler::read_stregth_coaches(std::string file_name, Team& team) {
+void Data_handler::read_strength_coaches(std::string file_name, Team& team) {
 	std::ifstream file;
 
 	try {
@@ -98,6 +105,13 @@ void Data_handler::read_players_list(std::string file_name, Team& team) {
 	catch (const std::ifstream::failure& e) {
 		std::cout << "Wystapil blad przy wczytywaniu danych!" << '\n';
 	}
+}
+
+void Data_handler::save_data(Team& team) {
+
+	this->save_players_data(this->players_data, team);
+	this->save_endurance_coaches_data(this->endurance_coaches_data, team);
+	this->save_strength_coaches_data(this->strength_coaches_data, team);
 }
 
 void Data_handler::save_players_data(std::string players_file_name, Team& team) {

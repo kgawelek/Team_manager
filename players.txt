@@ -2,38 +2,13 @@ Szczesny
 1
 80
 70
-Piotrowski
-60
-18 3 2021
-1
-88
-Tomaszewski
-45
-22 3 2021
-0
-90
 .
-Kowalski
-10
-21 3 2021
-1
-75
 .
 Lewandowski
 9
 90
 90
-Tomaszewski
-75
-19 3 2021
-1
-90
 .
-Nowak
-20
-20 3 2021
-1
-95
 .
 Glik
 15
@@ -45,17 +20,6 @@ Milik
 7
 80
 85
-.
-Nowak
-10
-16 4 2021
-0
-80
-.
-Krychowiak
-10
-90
-75
 .
 .
 -
