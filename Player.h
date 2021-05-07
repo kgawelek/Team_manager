@@ -31,6 +31,8 @@ public:
 	void add_endurance_workout(Endurance_workout ew);
 	void add_strength_workout(Strength_workout sw);
 
+	void change_endurance_workout_status();
+	void change_strength_workout_status();
 
 	Player() = default;
 	Player(std::string name, int number, double strength, double endurance) :

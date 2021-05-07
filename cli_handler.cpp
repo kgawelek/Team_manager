@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Cli_handler.h"
 
-void Cli_handler::start_cli(Team& team) {
+void Cli_handler::start_cli(Team& team, Reports reports) {
 
 	std::cout << "------------------------------------------------" << '\n';
 
@@ -45,7 +45,7 @@ void Cli_handler::start_cli(Team& team) {
 				team.add_coach();
 				break;
 			case 6:
-				team.reports();
+				reports.report_choice();
 				break;
 			case 7:
 				team.workouts_history();

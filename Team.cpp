@@ -158,9 +158,7 @@ void Team::add_workout() {
 
 }
 
-void Team::reports() {
-	//TODO: implement - 6
-}
+
 
 void Team::add_coach() {
 
@@ -205,6 +203,7 @@ void Team::workouts_history() {
 
 	std::cout << "Treningi wytrzymalosciowe:" << '\n';
 	for (Endurance_workout ew : (*it).get_endurance_workouts()) {
+		std::cout << '\n';
 		std::cout << ew.get_coach()->get_name() << '\n'
 			<< "Minuty treningu: " << ew.get_minutes_of_workout() << '\n'
 			<< ew.get_date().get_day() << "." << ew.get_date().get_month() << "." << ew.get_date().get_year() << '\n';
@@ -215,10 +214,11 @@ void Team::workouts_history() {
 		else
 			std::cout << "Nie" << '\n';
 	}
-
+	std::cout << '\n';
 
 	std::cout << "Treningi silowe:" << '\n';
 	for (Strength_workout sw : (*it).get_strength_workouts()) {
+		std::cout << '\n';
 		std::cout << sw.get_coach()->get_name() << '\n'
 			<< "Ilosc cwiczen: " << sw.get_nr_of_excercises() << '\n'
 			<< sw.get_date().get_day() << "." << sw.get_date().get_month() << "." << sw.get_date().get_year() << '\n';
@@ -232,6 +232,28 @@ void Team::workouts_history() {
 }
 
 void Team::change_workout_status() {
-	//TODO: implement - 3
+	std::list<Player>::iterator it = find_player();
+
+	if (it != players.end()) {
+		int choice = 0;
+		std::cout << "Wybierz typ trenigu: \n1.Wytrzymalosciowy \n2.Silowy \nWybor: ";
+		std::cin >> choice;
+
+		if (choice == 1 && (*it).get_endurance_workouts().size() > 0) {
+				(*it).change_endurance_workout_status();
+			
+		}
+		else if (choice == 2 && (*it).get_strength_workouts().size() > 0) {
+			
+				(*it).change_strength_workout_status();
+		}
+		else {
+			std::cout << "Nieprawidlowa opcja lub brak treningow pasujacych do kryteriow!\n";
+			return;
+		}
+	}
+	else {
+		std::cout << "Podano dane zawodnika, ktory nie istnieje" << '\n';
+	}
 }
 

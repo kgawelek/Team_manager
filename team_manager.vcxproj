@@ -146,6 +146,7 @@
     <ClCompile Include="Endurance_coach.cpp" />
     <ClCompile Include="Endurance_workout.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Reports.cpp" />
     <ClCompile Include="Strength_coach.cpp" />
     <ClCompile Include="Strength_workout.cpp" />
     <ClCompile Include="Team.cpp" />
@@ -161,6 +162,7 @@
     <ClInclude Include="Endurance_workout.h" />
     <ClInclude Include="My_list.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="Reports.h" />
     <ClInclude Include="Strength_coach.h" />
     <ClInclude Include="Strength_workout.h" />
     <ClInclude Include="Team.h" />

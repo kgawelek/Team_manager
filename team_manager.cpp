@@ -2,6 +2,7 @@
 #include "Team.h"
 #include "Cli_handler.h"
 #include "Data_handler.h"
+#include "Reports.h"
 
 int main()
 {
@@ -15,7 +16,8 @@ int main()
 
     data.read_data(team);
 
-    cli.start_cli(team);
+    Reports reports(team);
+    cli.start_cli(team, reports);
 
     data.save_data(team);
 

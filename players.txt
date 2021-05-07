@@ -1,25 +1,115 @@
 Szczesny
 1
 80
+72
+Piotrowski
+80
+10 4 2021
+0
 70
+Tomaszewski
+60
+7 5 2021
+1
+72
 .
+Misiura
+20
+3 5 2020
+1
+80
 .
 Lewandowski
 9
+94
 90
+Tomaszewski
+60
+24 4 2020
+1
+85
+Tomaszewski
+60
+24 4 2021
+1
 90
+Tomaszewski
+50
+6 5 2021
+1
+95
 .
+Misiura
+20
+3 5 2020
+1
+90
+Misiura
+20
+3 4 2021
+1
+94
+Misiura
+20
+3 5 2021
+1
+90
 .
 Glik
 15
 90
-75
+78
+Tomaszewski
+60
+24 4 2020
+1
+80
+Tomaszewski
+60
+24 4 2020
+1
+70
+Tomaszewski
+60
+24 5 2020
+1
+78
 .
+Nowak
+5
+23 4 2020
+0
+88
+Nowak
+5
+23 4 2021
+0
+90
 .
 Milik
 7
 80
 85
+Tomaszewski
+50
+6 2 2021
+1
+88
+Tomaszewski
+50
+6 5 2021
+1
+85
 .
+Nowak
+5
+23 4 2020
+0
+84
+Nowak
+5
+23 4 2021
+0
+80
 .
 -

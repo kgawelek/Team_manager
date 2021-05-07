@@ -33,7 +33,6 @@ public:
 	void add_player();
 	void remove_player();
 	void add_workout();
-	void reports();
 	void add_coach();
 	void workouts_history();
 	void change_workout_status();
