@@ -21,8 +21,8 @@ Misiura
 .
 Lewandowski
 9
-94
 90
+95
 Tomaszewski
 60
 24 4 2020
@@ -57,7 +57,7 @@ Misiura
 .
 Glik
 15
-90
+92.7
 78
 Tomaszewski
 60
@@ -66,50 +66,62 @@ Tomaszewski
 80
 Tomaszewski
 60
-24 4 2020
+24 4 2021
 1
 70
 Tomaszewski
 60
-24 5 2020
+24 5 2021
 1
 78
 .
 Nowak
 5
 23 4 2020
-0
+1
 88
 Nowak
 5
 23 4 2021
-0
-90
+1
+91
 .
-Milik
+Krychowiak
+10
+85
+86.5
+Tomaszewski
+60
+2 5 2020
+1
+83
+Tomaszewski
+70
+3 4 2021
+1
+86
+.
+.
+Fabianski
+13
+73.3
+70
+.
+Nowak
+5
+1 1 2020
+1
+71
+.
+Banas
 7
 80
-85
+70
 Tomaszewski
-50
-6 2 2021
-1
-88
-Tomaszewski
-50
-6 5 2021
-1
-85
+60
+17 5 2021
+0
+70
 .
-Nowak
-5
-23 4 2020
-0
-84
-Nowak
-5
-23 4 2021
-0
-80
 .
 -

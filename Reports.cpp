@@ -1,5 +1,9 @@
 #include "Reports.h"
 
+void Reports::set_team(Team& team) {
+	this->team = team;
+}
+
 void Reports::report_choice() {
 	int choice;
 	std::cout << "Czy chcesz utworzyc raport dla konkretnego zawodnika czy ogolny?\n";

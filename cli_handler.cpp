@@ -11,7 +11,6 @@ void Cli_handler::start_cli(Team& team, Reports reports) {
 
 	while (choice != 11) {
 		choice = 0;
-
 		std::cout << "Wybierz opcje:" << '\n';
 		std::cout << "[1] Pokaz liste zawodnikow" << '\n';
 		std::cout << "[2] Dodaj zawodnika do druzyny" << '\n';
@@ -26,9 +25,8 @@ void Cli_handler::start_cli(Team& team, Reports reports) {
 		std::cout << "[11] Zakoncz program" << '\n';
 		std::cout << "Opcja: ";
 		std::cin >> choice;
-		try{
-		
-			switch (choice) {
+
+		switch (choice) {
 			case 1:
 				team.print_players();
 				break;
@@ -45,6 +43,7 @@ void Cli_handler::start_cli(Team& team, Reports reports) {
 				team.add_coach();
 				break;
 			case 6:
+				reports.set_team(team);
 				reports.report_choice();
 				break;
 			case 7:
@@ -62,15 +61,12 @@ void Cli_handler::start_cli(Team& team, Reports reports) {
 			case 11:
 				break;
 			default:
-				throw "Wybrano niepoprawna opjce";
+				std::cout << "Wybrano niepoprawna opjce\n";
 				break;
-			}
-		
-		}
-		catch (const char* err) {
-			std::cout << err << '\n';
 		}
 		
+		
+	
 
 
 	}

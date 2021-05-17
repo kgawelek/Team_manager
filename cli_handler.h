@@ -6,6 +6,6 @@ class Cli_handler {
 
 	
 public:
-	void start_cli(Team& team, Reports report);
+	void start_cli(Team& team, Reports reports);
 };
 

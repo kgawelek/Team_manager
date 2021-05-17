@@ -44,7 +44,6 @@ std::list<Player>::iterator Team::find_player() {
 		else
 			return false;
 		});
-
 	return it;
 }
 
@@ -62,10 +61,25 @@ void Team::add_player() {
 	std::cin >> _name;
 	std::cout << "Podaj numer zawodnika:" << '\n';
 	std::cin >> nr;
+
+	std::list<Player>::iterator it = std::find_if(this->players.begin(), this->players.end(), [nr](Player p) {
+		if (p.get_nr() == nr)
+			return true;
+		else
+			return false;
+		});
+
+	if (it != players.end()) {
+		std::cout << "Zawodnik o podanym numerze juz istnieje!\n";
+		return;
+	}
+
 	std::cout << "Podaj sile zawodnika:" << '\n';
 	std::cin >> strength;
 	std::cout << "Podaj wytrzymalosc:" << '\n';
 	std::cin >> endurance;
+
+	
 
 	this->players.push_back(Player(_name, nr, strength, endurance));
 }

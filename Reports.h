@@ -13,6 +13,7 @@ public:
 	void personal_report_endurance(Player player);
 	void personal_report_strength(Player player);
 	void all_players_report();
+	void set_team(Team& team);
 
 };
 
